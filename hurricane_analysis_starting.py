@@ -63,7 +63,7 @@ def create_dictionary(names, months, years, max_sustained_winds, areas_affected,
   dict = {}
   ranges = range(len(names))
   for i in ranges:
-    dict[names[i]] = {"Name": names[i], "Month": months[i], "Max Sustained Wind": max_sustained_winds[i], "Areas Affected": areas_affected[i], "Damage" : new_damages[i], "Death": deaths[i]}
+    dict[names[i]] = {"Name": names[i], "Month": months[i], "Year": years[i], "Max Sustained Wind": max_sustained_winds[i], "Areas Affected": areas_affected[i], "Damage" : new_damages[i], "Death": deaths[i]}
   return dict
 
 hurricanes = create_dictionary(names, months, years, max_sustained_winds, areas_affected, new_damages, deaths)
